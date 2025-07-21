@@ -5,6 +5,11 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  "server.hmr.overlay" : false,
+  base: '/my-movie-app/',
+  // "server.hmr.overlay" : false,
+  server: {
+    hmr: {
+      overlay: false,
+    },
+  },
 })
-
