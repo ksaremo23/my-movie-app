@@ -21,7 +21,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/vite-movie-app/', // MUST match your repo name
+  base: '/my-movie-app/', // MUST match your repo name
   server: {
     hmr: {
       overlay: false,
