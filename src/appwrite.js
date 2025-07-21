@@ -52,16 +52,3 @@ export const getTrendingMovies = async () => {
     }
 }
 
-// export const getTrendingMovies = async () => {
-//   try {
-//     const result = await database.listDocuments(DATABASE_ID, COLLECTION_ID, [
-//       Query.limit(5),
-//       Query.orderDesc("count")
-//     ]);
-
-//     return result.documents; // ✅ this line is crucial
-//   } catch (error) {
-//     console.error(error);
-//     return []; // ✅ fallback so app doesn't break
-//   }
-// };
